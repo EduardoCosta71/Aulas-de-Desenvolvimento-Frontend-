@@ -1,0 +1,326 @@
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 8%;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+    background-color: #f4f4f4;
+    
+    color: #333;
+    
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+h1 {
+    text-align: center;
+    
+    color: #222;
+    
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+    font-size: 32px;
+}
+
+h2 {
+    color: #333;
+    
+    margin-top: 35px;
+    margin-bottom: 15px;
+    
+    border-bottom: 2px solid #ccc;
+    
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #444;
+    
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   PARÁGRAFO
+========================= */
+
+p {
+    background-color: #fff;
+    
+    padding: 20px;
+    
+    border: 1px solid #ddd;
+    
+    border-radius: 6px;
+    
+    text-align: justify;
+    
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   IMAGENS
+========================= */
+
+img {
+    margin: 10px;
+    
+    border-radius: 6px;
+    
+    border: 1px solid #ccc;
+    
+    object-fit: cover;
+    
+    vertical-align: middle;
+    
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    
+    transition: 0.2s;
+}
+
+
+/* Pequeno efeito ao passar o mouse */
+img:hover {
+    transform: scale(1.02);
+}
+
+
+/* =========================
+   TABELA
+========================= */
+
+table {
+    width: 100%;
+    
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+    border-collapse: collapse;
+    
+    background-color: #fff;
+    
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Células da tabela */
+
+th {
+    border: 1px solid #bbb;
+    
+    padding: 14px;
+    
+    text-align: center;
+}
+
+
+/* Cabeçalho da tabela */
+
+thead th {
+    background-color: #e9e9e9;
+    
+    color: #222;
+}
+
+
+/* Corpo da tabela */
+
+tbody th {
+    font-weight: normal;
+    
+    background-color: #fff;
+}
+
+
+/* Efeito nas linhas */
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* =========================
+   LISTA
+========================= */
+
+ul {
+    background-color: #fff;
+    
+    border: 1px solid #ddd;
+    
+    border-radius: 6px;
+    
+    padding: 20px 40px;
+    
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+li {
+    margin-bottom: 8px;
+    
+    color: #444;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+form {
+    max-width: 600px;
+    
+    margin: 25px auto 50px;
+    
+    padding: 30px;
+    
+    background-color: #fff;
+    
+    border: 1px solid #ddd;
+    
+    border-radius: 8px;
+    
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Labels */
+
+label {
+    display: inline-block;
+    
+    margin-bottom: 6px;
+    
+    font-weight: bold;
+    
+    color: #333;
+}
+
+
+/* Campos de texto */
+
+input[type="text"] {
+    width: 100%;
+    
+    padding: 11px;
+    
+    margin-bottom: 15px;
+    
+    border: 1px solid #bbb;
+    
+    border-radius: 5px;
+    
+    font-size: 15px;
+    
+    outline: none;
+}
+
+
+/* Campo selecionado */
+
+input[type="text"]:focus {
+    border-color: #555;
+    
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+input[type="submit"] {
+    width: 100%;
+    
+    padding: 12px;
+    
+    margin-top: 10px;
+    
+    border: none;
+    
+    border-radius: 5px;
+    
+    background-color: #333;
+    
+    color: #fff;
+    
+    font-size: 16px;
+    
+    font-weight: bold;
+    
+    cursor: pointer;
+    
+    transition: 0.2s;
+}
+
+
+/* Botão ao passar o mouse */
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+/* Botão ao clicar */
+
+input[type="submit"]:active {
+    background-color: #222;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    img {
+        width: 100%;
+        height: auto !important;
+        margin: 10px 0;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th {
+        padding: 8px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
+
