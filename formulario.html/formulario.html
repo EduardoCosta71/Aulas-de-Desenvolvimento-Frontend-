@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <h1>formulario de informações pessoais</h1>
+
+    <form action="" name="form1" method="post">
+
+        <label>Nome: </label>
+        <input type="text" name="nome"> <br> <br>
+
+        <label >Senha: </label>
+        <input type="password" name="senha"> <br> <br>
+
+        <label>E-mail: </label>
+        <input type="email" name="usermail"> <br> <br>
+
+        <label>URL: </label>
+        <input type="url" name="homepage"> <br> <br>
+
+
+        <h2>Carros</h2>
+
+        <label >Camaro</label>
+        <input type="checkbox" name="carros" value="Camaro">
+
+        <label>Ferrari</label>
+        <input type="checkbox" name="carros" value="Ferrari">
+
+        <h3>Cursos</h3>
+
+        <fieldset>
+
+            <legend>Cursos Selecionados</legend>
+
+            <label>Cursos</label>
+
+            <select>
+
+                <option value="Java">Java</option>
+                <option value="Banco de dados"> Banco de dados</option>
+                <option value="JSP"> Javascript</option>
+                <option value="HTML">HTML</option>
+
+            </select> <br> <br>
+
+            <label>Mensagem</label><br>
+            <textarea rows="8" cols="70" name="msg"></textarea>
+
+
+        </fieldset> <br>
+
+        <label>Enviar formulário: </label>
+        <input type="submit" value="Enviar">
+
+    </form>
+    
+</body>
+
+</html>

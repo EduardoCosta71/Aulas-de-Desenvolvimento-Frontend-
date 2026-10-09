@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: bisque;
 }
@@ -13,4 +14,21 @@ div > p{
 div > span{
     color: brown;
 
+=======
+body {
+    background-color: bisque;
+}
+
+p{
+    color: rgb(0, 0, 0);
+}
+
+div > p{
+    color: red;
+}
+
+div > span{
+    color: brown;
+
+>>>>>>> 289456faf0972ef813a2aa4c9387a48049d046ca
 }
