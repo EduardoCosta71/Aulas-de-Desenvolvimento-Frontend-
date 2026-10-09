@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de redeclaração e alteração</title>
+</head> 
+<body>
+
+    <script>
+        
+        var valor = 1;
+        var valor = 2; //Redeclaração e alteração de valor
+        
+        if (true) { 
+            var dentro = 3; // Continua acessivel fora do bloco.
+        }
+
+        valor = 4; // Alteração de valor fora do bloco.
+
+        console.log(valor, dentro);
+        
+        </script>
+    
+</body>
+</html>
