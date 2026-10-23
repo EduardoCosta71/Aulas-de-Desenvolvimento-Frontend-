@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1: Formulario</title>
+    <style>
+        body{
+            font-family: Verdana;
+            font-size: 18pt;
+        }
+
+        form{
+            border: 22px double red;
+            width: 400px;
+            padding: 30px;
+        }
+
+        input [type="text"]{
+            font-size: 18pt;
+            border: 1px solid black;
+            width: 230px;
+            background: yellow;
+        }
+            
+
+    </style>
+</head>
+<body>
+
+ <form id="calculadora" name="calculadora">
+
+    <label for="valor1">Valor 1</label>
+    <input type="text" name="valor1" id="valor1"> <br>
+    <label for="valor2">Valor 2</label> 
+    <input type="text" name="valor2" id="valor2"> <br>
+
+    <strong>Opçoes</strong> <br>
+
+    <input type="radio" id="soma" name="operacao" value="soma"><label for="soma">SOMA</label>
+    <input type="radio" id="subtracao" name="operacao" value="subtracao"><label for="subtracao">SUBTRAÇAO</label>
+    <input type="radio" id="multiplicacao" name="operacao" value="multiplicacao"><label for="multiplicacao">MULTIPLICAÇAO</label>
+    <input type="radio" id="divisao" name="operacao" value="divisao"><label for="divisao">DIVISAO</label>
+
+    <label for="resultado"><strong>Resultado:</strong></label> <br>
+    <input type="text" id="resultado" name="resultado" readonly> <br>
+    <button type="button" id="calcular" name="calcular">Calcular</button>
+
+ </form>
+
+
+    <script>
+
+        // Contas
+
+        document.getElementById("calcular").addEventListener("click", function(){
+            
+            const texto1 = document.getElementById("valor1").value.trim().replace(",",".");
+            const texto2 = document.getElementById("valor1").value.trim().replace(",",".");
+
+            const v1 = Number(texto1);
+            const v2 = Number(texto2);
+
+            const opcao = 
+
+
+        });
+
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

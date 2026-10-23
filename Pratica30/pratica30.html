@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento em camadas</title>
+
+    <style>
+        #mensagem{ color:navy;
+                   font-family:verdana;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="mensagem"> Conteudo da pagina</p>
+    <button id="mudar" type="button">Alterar mensagem</button>
+
+    <script>
+
+        document.getElementById("mudar").addEventListener("click", function(){
+        document.getElementById("mensagem").textContent="Javascript alterou o conteúdo";
+        });
+
+    </script>
+    
+</body>
+</html>

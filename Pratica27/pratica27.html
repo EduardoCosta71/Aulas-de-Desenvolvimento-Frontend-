@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar dois números inteiros</title>
+</head>
+<body>
+
+    <script>
+
+        let a;
+        let aux = prompt("Digite o valor de A: ", "");
+
+        a = parseInt(aux, 10);
+
+        // Modo 2
+
+        let b = parseInt(prompt("Digite o valor de B: ", ""), 10);
+
+        //Parentese garante a soma antes de concatenação .
+
+        alert(a + "+" + b + "=" + (a+b));
+        alert('${a}+${b}=$(a+b)');
+        console.log("Soma: ", a + b);
+
+    </script>
+    
+</body>
+</html>
